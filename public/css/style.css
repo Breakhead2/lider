@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/*   section null styles start   */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+body.lock {
+    overflow: hidden;
+}
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*   section null styles end   */
+
+[class*=__container] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 750px) and (max-width: 1200px){
+    [class*=__container] {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 750px) {
+    [class*=__container] {
+        padding: 0 30px;
+        max-width: 750px;
+    }
+}
+@media (min-width: 425px) and (max-width: 580px) {
+    [class*=__container] {
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 425px) {
+    [class*=__container] {
+        min-width: 290px;
+    }
+}
+
+/* section variables start */
+
+:root{
+    --main-color: #000000;
+    --second-color: #00A82D;
+    --third_color: #296DC1;
+    --main-text-size: 16px;
+    --main-text-weight: 500;
+    --main-text-lineHeight: 20px;
+    --h2-headering-size: 26px;
+    --h2-headering-weight: 700;
+    --h2-headering-lineHeight: 34px;
+    --h1-headering-size: 30px;
+    --h1-headering-weight: 700;
+    --h1-headering-lineHeight: 39px;
+}
+
+/* section variables end */
+
+/* section header start */
+
+header .header__container{
+    margin: 37px auto 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header__container .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+header .header__container .basket{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+header .header__container .basket .basket_hover{
+    display: flex;
+    align-items: center;
+}
+header .header__container .basket .basket_hover:hover{
+    color: var(--second-color);
+    cursor: pointer
+}
+header .header__container .basket .basket_hover:hover svg{
+    fill: var(--second-color);
+}
+header .header__container .basket .basket_text{
+    padding: 0 10px;
+}
+
+header .header__container .basket #quantity{
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    width: 21px;
+    height: 21px;
+    background-color: #00A82D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 50%;
+}
+
+/* media queries for header */
+
+@media (max-width: 580px) {
+    header .header__container{
+        margin: 29px auto 75px;
+    }
+    header .header__container .logo {
+        width: 180px;
+    }
+    header .header__container .basket .basket_hover .basket_text{
+        display: none;
+    }
+    header .header__container .basket #quantity{
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 425px){
+    header .header__container{
+        margin: 27px 0 50px;
+    }
+}
+
+/* section header end */
+
+/* section footer start */
+
+footer .footer__container{
+    border-top: 1px solid #A8AFBB;
+}
+footer .footer__container p{
+    font-size: 12px;
+    line-height: 16px;
+    padding: 20px 0 26px;
+    color: #7C828B;
+}
+
+@media (max-width: 750px) and (min-width: 580px) {
+    footer .footer__container{
+        margin: 0 30px 0;
+        padding: 0;
+    }
+}
+@media (max-width: 580px) and (min-width: 425px) {
+    footer .footer__container{
+        margin: 0 35px 0;
+        padding: 0;
+    }
+}

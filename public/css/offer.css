@@ -1,0 +1,83 @@
+.offer{
+    background-color: #F2F5F9;
+    margin-bottom: 60px;
+}
+.offer__container h2{
+    font-size: var(--h2-headering-size);
+    font-weight: var(--h2-headering-weight);
+    line-height: var(--h2-headering-lineHeight);
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+.offer__container #offer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 430px);
+    padding-bottom: 76px;
+}
+.offer__container #offer label{
+    position: relative;
+    margin-bottom: 30px;
+}
+.offer__container #offer input{
+    height: 60px;
+    padding: 20px 26px;
+    font-size: inherit;
+    width: 100%;
+}
+.offer__container #offer input:focus{
+    border: 1px solid #4892EC;
+}
+.offer__container #offer input.invalid{
+    border: 1px solid #E86880;
+}
+.offer__container #offer input::placeholder{
+    color: #535860;
+}
+.customPlaceholder{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    color: #535860;
+}
+.customPlaceholder .active{
+    display: none;
+}
+.offer__container #offer .submit{
+    text-transform: uppercase;
+    height: 60px;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: rgba(41, 109, 193, 0.5);
+    cursor: auto;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+
+.offer__container #offer .submit.active{
+    background-color: #296DC1;
+    cursor: pointer;
+}
+
+.error{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #E86880;
+}
+@media (max-width: 1200px){
+    .offer{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .offer__container h2{
+        padding-top: 50px;
+    }
+    .offer__container #offer{
+        padding-bottom: 32px;
+    }
+}
