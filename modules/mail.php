@@ -12,8 +12,8 @@ function sendMail($name, $email, $order, $phone)
 {
     $mail = new PHPMailer();
 
-    $myEmail = 'greenfish93@yandex.ru';
-    $pass = 'ZRs#H@&46g0G';
+    $myEmail = 'yandex.ru';
+    $pass = 'pass';
 
     $mail->Mailer = 'smtp';
     $mail->Host = 'ssl://smtp.yandex.ru';
