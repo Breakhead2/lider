@@ -3,10 +3,10 @@
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('TEMPLATES_DIR', ROOT . '/templates/');
 
-//define('HOST', 'localhost');
-//define('USER', '*****');
-//define('PASS', '*****');
-//define('DB_NAME', '*****');
+define('HOST', 'localhost');
+define('USER', '*****');
+define('PASS', '*****');
+define('DB_NAME', '*****');
 
 require "./engine/router.php";
 require "./engine/routerApi.php";
