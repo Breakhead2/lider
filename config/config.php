@@ -4,14 +4,9 @@ define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('TEMPLATES_DIR', ROOT . '/templates/');
 
 //define('HOST', 'localhost');
-//define('USER', 'k92772gs_db2');
-//define('PASS', 'q6t6*zrW97rs');
-//define('DB_NAME', 'k92772gs_db2');
-
-define('HOST', 'localhost:3306');
-define('USER', 'denis_s');
-define('PASS', 'Fib0naccI12358');
-define('DB_NAME', 'lider');
+//define('USER', '*****');
+//define('PASS', '*****');
+//define('DB_NAME', '*****');
 
 require "./engine/router.php";
 require "./engine/routerApi.php";
